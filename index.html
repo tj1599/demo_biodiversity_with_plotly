@@ -15,7 +15,9 @@
   <!-- start of dashboard -->
   <div class="container">
     <!-- nav bar -->
-
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="https://github.com/tj1599/demo_biodiversity_with_plotly">Link to GitHub Repository</a>
+    </nav>
     <!-- jumbotron -->
     <section class="jumbotron_section">
       <div class="row">
@@ -23,6 +25,8 @@
           <h1>Belly Button Biodiversity Dashboard</h1>
           <p>Use the interactive charts below to explore the dataset</p>
         </div>
+        <!-- Add more info about the project as a paragraph -->
+        <p> Purpose of Dashboard is to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, Roza's volunteers will be able to identify whether that species is found in their navel.</p>
       </div>
     </section>
 
@@ -45,6 +49,7 @@
               <h3 class="panel-title">Demographic Info</h3>
             </div>
             <div id="sample-metadata" class="panel-body"></div>
+            <div class="panel-footer">Note: WFREQ is used in the guage to the right.</div>
           </div>
         </div>
         <div class="col-md-5">
@@ -65,7 +70,7 @@
       </div>
     </section>
   </div>
-<!-- links to js and d3 -->
+  <!-- links to js and d3 -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

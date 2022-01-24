@@ -1,0 +1,6 @@
+.jumbotron {
+    color: yellow;
+    background-image: url("../images/cow.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
