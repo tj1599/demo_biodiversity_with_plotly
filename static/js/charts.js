@@ -70,7 +70,7 @@ function buildCharts(sample) {
 
     //  5. Create a variable that holds the first sample in the array.
     let result = resultArray[0];
-
+    console.log(metadataResult)
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     let otu_ids = result.otu_ids;
@@ -81,8 +81,8 @@ function buildCharts(sample) {
     // console.log(sample_values);
 
     // 3. Create a variable that holds the washing frequency.   
-    let washFreq = parseFloat(metadataResult.wFreq);
-
+    let washFreq = parseFloat(metadataResult.wfreq);
+    console.log(metadataResult.wfreq)
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
@@ -139,7 +139,7 @@ function buildCharts(sample) {
     var gaugeData = [
       {
         type: "indicator",
-        mode: "guage+number",
+        mode: "gauge+number",
         value: washFreq,
         title: { text: "<b>Belly Button Washing Frequency<b> <br> Scrubs Per Week", font: { size: 24 } },
         gauge: {
